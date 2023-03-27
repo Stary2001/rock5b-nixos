@@ -82,6 +82,7 @@ in
           ./0007-rock-5b-Configure-FIQ-debugger-as-115200.patch
           ./0008-rock-5b-disable-uart2-wont-bind-as-a-console.patch
 	  ./0009-fix-compile-pahole.patch
+	  ./0010-fix-brcmfmac-separate-output-dir.patch
         ];
     }
     // (args.argsOverride or {}))
