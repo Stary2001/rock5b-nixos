@@ -39,10 +39,6 @@
         src = inputs.kernel-src.outPath;
       };
 
-      panfork = pkgsCross.callPackage ./panfork {
-        src = inputs.panfork.outPath;
-      };
-
       kodi = pkgsCross.callPackage ./kodi {
         x11Support = false;
         gbmSupport = true;

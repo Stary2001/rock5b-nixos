@@ -6,8 +6,6 @@
   flake.nixosModules = {
     kernel = ./kernel;
 
-    panfork = ./panfork;
-
     fan-control = ./fan-control;
 
     cross = ./cross;
