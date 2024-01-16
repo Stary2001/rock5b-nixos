@@ -74,7 +74,6 @@ in
         ++ builtins.map (patch: {inherit patch;}) [
           ./0000-Set-RK3588-FIQ-at-115200-bauds.patch
           ./0001-Ignore-implementation-defects-warned-by-newer-GCC.patch
-          ./0002-rk630phy-Fix-implementation.patch
           ./0003-usb-gadget-legacy-webcam-Fix-implementation.patch
           ./0004-revert-commit-f7382476af9d5e3d94bacc769bbf23d5fafd5cdb.patch
           ./0005-arm64-dts-rk3588-rock-5b-Use-serial-instead-of-FIQ.patch
