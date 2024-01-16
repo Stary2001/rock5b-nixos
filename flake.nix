@@ -36,7 +36,7 @@
     };
 
   nixConfig = {
-    extra-substituters = ["https://rock5b-nixos.cachix.org"];
-    extra-trusted-public-keys = ["rock5b-nixos.cachix.org-1:bXHDewFS0d8pT90A+/YZan/3SjcyuPZ/QRgRSuhSPnA="];
+#    extra-substituters = ["https://rock5b-nixos.cachix.org"];
+#    extra-trusted-public-keys = ["rock5b-nixos.cachix.org-1:bXHDewFS0d8pT90A+/YZan/3SjcyuPZ/QRgRSuhSPnA="];
   };
 }
