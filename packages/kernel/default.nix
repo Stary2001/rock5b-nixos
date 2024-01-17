@@ -6,7 +6,7 @@
   pkgs,
   ...
 } @ args: let
-  kernelVersion = "5.10.110";
+  kernelVersion = "5.10.160";
   vendorVersion = "";
   version = "${kernelVersion}${vendorVersion}";
 in
