@@ -14,10 +14,6 @@
       localSystem = system;
       crossSystem = "aarch64-linux";
     };
-    pkgsForKernelCross = import inputs.nixpkgs-kernel {
-      localSystem = system;
-      crossSystem = "aarch64-linux";
-    };
     evalConfig = import "${inputs.nixpkgs}/nixos/lib/eval-config.nix";
     buildConfig = hostSystem: config:
       evalConfig {
@@ -35,7 +31,7 @@
         src = "${inputs.fan-control.outPath}/src";
       };
 
-      linux-rock5b = pkgsForKernelCross.callPackage ./kernel {
+      linux-rock5b = pkgsCross.callPackage ./kernel {
         src = inputs.kernel-src.outPath;
       };
 
