@@ -13,7 +13,7 @@ in
   buildLinux (args
     // {
       inherit version;
-      extraMakeFlags = [ "KCFLAGS=-Wno-error=vla,comment" ];
+      extraMakeFlags = [ "KCFLAGS=-Wno-error" ];
 
       # https://github.com/radxa/build/blob/428769f2ab689de27927af4bc8e7a9941677c366/board_configs.sh#L304
       defconfig = "rockchip_linux_defconfig";
